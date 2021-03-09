@@ -21,12 +21,12 @@ class NotesRVAdapter(
         val view = LayoutInflater.from(context).inflate(R.layout.item_view, parent, false)
         val viewHolder = NoteViewHolder(view)
         viewHolder.noteDeleteBtn.setOnClickListener { listener.onNoteDelete(notes[viewHolder.adapterPosition]) }
+        viewHolder.itemView.setOnClickListener { listener.onNoteClick(notes[viewHolder.adapterPosition]) }
         return viewHolder
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         holder.noteTextView.text = notes[position].text
-        if (notes[position].color == 0) notes[position].color = Utils.getRandomColor(context)
         holder.itemView.setBackgroundColor(notes[position].color)
     }
 
@@ -48,5 +48,6 @@ class NotesRVAdapter(
 
     interface OnItemClickListener {
         fun onNoteDelete(note: Note)
+        fun onNoteClick(note: Note)
     }
 }

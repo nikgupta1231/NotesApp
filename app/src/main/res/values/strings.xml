@@ -3,4 +3,9 @@
     <string name="submit">Submit</string>
     <string name="delete_btn">delete btn</string>
     <string name="what_is_in_your_mind">What is in your mind?</string>
+    <string name="adding_note">adding note</string>
+    <string name="back_button">back button</string>
+    <string name="done_btn">done btn</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="add_note">Add Note</string>
 </resources>

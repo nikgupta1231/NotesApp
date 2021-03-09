@@ -6,18 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@color/note_color">
+    android:background="@drawable/outline_round_corners">
 
     <TextView
         android:id="@+id/noteTv"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:fontFamily="serif"
+        android:fontFamily="cursive"
         android:justificationMode="inter_word"
         android:lineSpacingExtra="3dp"
         android:padding="16dp"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/delBtn"
